@@ -13,4 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('getData', 'TestController@index');
+
+Route::post('postData', 'TestController@store');
+
 Route::any('{path?}', 'MainController@index')->where("path", ".+");
